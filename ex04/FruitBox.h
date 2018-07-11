@@ -1,5 +1,5 @@
-#if !defined (FRUIT_BOX_h_)
-	#define FRUIT_BOX_h_
+#ifndef FRUIT_BOX_H_
+#define FRUIT_BOX_H_
 
 	#include "FruitNode.h"
 
@@ -23,3 +23,4 @@ private:
 };
 
 #endif /* Watson */
+/* Watson */

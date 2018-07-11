@@ -1,5 +1,3 @@
-
-
 #include "Lemon.h"
 
 Lemon::Lemon() :
@@ -10,4 +8,5 @@ Lemon::Lemon() :
 Lemon::Lemon(std::string name, int vitamins) :
 	Fruit(name, vitamins)
 {
-}
+}/* Watson**/
+/* Watson */

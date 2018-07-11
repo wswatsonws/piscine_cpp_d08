@@ -1,9 +1,7 @@
+#ifndef MIXER_H_
+#define MIXER_H_
 
-
-#if !defined (MIXER_h_)
-	#define MIXER_h_
-
-	#include "MixerBase.h"
+#include "MixerBase.h"
 
 class Mixer : public MixerBase {
 public:
@@ -12,4 +10,5 @@ public:
 	void plug();
 };
 
-#endif /* !defined (MIXER_h_) */
+#endif /* Watson**/
+/* Watson */

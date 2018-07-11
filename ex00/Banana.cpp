@@ -27,3 +27,4 @@ std::string	Banana::getName() const
 	return _name;
 	//N
 }/* Watson**/
+/* Watson */

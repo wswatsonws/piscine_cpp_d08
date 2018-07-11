@@ -1,9 +1,8 @@
+#ifndef LITTLE_HAND_H_
+#define LITTLE_HAND_H_
 
-#if !defined (LITTLE_HAND_h_)
-	#define LITTLE_HAND_h_
-
-	#include "Coconut.h"
-	#include "FruitBox.h"
+#include "Coconut.h"
+#include "FruitBox.h"
 
 class LittleHand {
 public:
@@ -15,4 +14,5 @@ public:
 		Coconut const * const *coconuts);
 };
 
-#endif /* !defined (LITTLE_HAND_h_) */
+#endif /* Watson**/
+/* Watson */

@@ -1,4 +1,3 @@
-
 #include "FruitBox.h"
 
 FruitBox::FruitBox(unsigned int capacity) :
@@ -49,9 +48,10 @@ Fruit *FruitBox::pickFruit()
 	delete node;
 	this->_count--;
 	return ((Fruit*)res);
-}
+}/* Watson**/
 
 FruitNode *FruitBox::head() const
 {
 	return (this->_head);
-}
+}/* Watson**/
+/* Watson */

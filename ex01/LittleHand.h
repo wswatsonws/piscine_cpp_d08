@@ -1,9 +1,7 @@
+#ifndef LITTLE_HAND_H_
+#define LITTLE_HAND_H_
 
-
-#if !defined (LITTLE_HAND_h_)
-	#define LITTLE_HAND_h_
-
-	#include "FruitBox.h"
+#include "FruitBox.h"
 
 class LittleHand {
 public:
@@ -13,4 +11,5 @@ public:
 		FruitBox &limes);
 };
 
-#endif /* !defined (LITTLE_HAND_h_) */
+#endif /* Watson**/
+/* Watson */

@@ -1,8 +1,7 @@
+#ifndef FRUIT_H_
+#define FRUIT_H_
 
-#if !defined (FRUIT_h_)
-	#define FRUIT_h_
-
-	#include <string>
+#include <string>
 
 class Fruit {
 public:
@@ -18,4 +17,5 @@ protected:
 	int _vitamins;
 };
 
-#endif /* !defined (FRUIT_h_) */
+#endif /* Watson**/
+/* Watson */

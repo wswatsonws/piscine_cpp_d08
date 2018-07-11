@@ -1,5 +1,3 @@
-
-
 #include "Fruit.h"
 
 Fruit::Fruit(std::string name, int vitamins) :
@@ -15,4 +13,5 @@ std::string Fruit::getName() const
 int Fruit::getVitamins() const
 {
 	return (this->_vitamins);
-}
+}/* Watson**/
+/* Watson */

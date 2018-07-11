@@ -1,6 +1,5 @@
-
-#if !defined (BANANA_h_)
-	#define BANANA_h_
+#ifndef BANANA_H_
+#define BANANA_H_
 
 	#include "Fruit.h"
 
@@ -9,4 +8,5 @@ public:
 	Banana();
 };
 
-#endif /* !defined (BANANA_h_) */
+#endif /* Watson**/
+/* Watson */

@@ -1,5 +1,3 @@
-
-
 #include <cstring>
 #include "LittleHand.h"
 #include "Banana.h"
@@ -40,10 +38,11 @@ FruitBox * const *LittleHand::organizeCoconut(Coconut const * const *coconuts)
 		for (int i = 0; i < 6 && *coconuts; i++)
 			res[boxes]->putFruit(*coconuts++);
 		boxes++;
-	}
+	}/* Watson**/
 	tmp = new FruitBox*[boxes + 1];
 	memcpy(tmp, res, boxes * sizeof(*tmp));
 	delete[] res;
 	tmp[boxes] = nullptr;
 	return (tmp);
-}
+}/* Watson**/
+/* Watson */

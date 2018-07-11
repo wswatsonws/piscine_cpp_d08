@@ -15,4 +15,5 @@ std::string Fruit::getName() const
 int Fruit::getVitamins() const
 {
 	return (this->_vitamins);
-}
+} /* Watson**/
+/* Watson */

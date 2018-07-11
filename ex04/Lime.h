@@ -1,7 +1,7 @@
-#if !defined (LIME_h_)
-	#define LIME_h_
+#ifndef LIME_H_
+#define LIME_H_
 
-	#include "Lemon.h"
+#include "Lemon.h"
 
 class Lime : public Lemon {
 public:
@@ -9,3 +9,4 @@ public:
 };
 
 #endif /* Watson */
+/* Watson */

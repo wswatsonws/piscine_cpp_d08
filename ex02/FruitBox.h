@@ -1,9 +1,7 @@
+#ifndef FRUIT_BOX_H_
+#define FRUIT_BOX_H_
 
-
-#if !defined (FRUIT_BOX_h_)
-	#define FRUIT_BOX_h_
-
-	#include "FruitNode.h"
+#include "FruitNode.h"
 
 class FruitBox {
 public:
@@ -24,4 +22,5 @@ private:
 	FruitNode *_head;
 };
 
-#endif /* !defined (FRUIT_BOX_h_) */
+#endif /*ndef (FRUIT_BOX_H_) */
+/* Watson */

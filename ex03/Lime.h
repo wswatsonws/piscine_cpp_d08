@@ -1,12 +1,12 @@
+#ifndef LIME_H_
+#define LIME_H_
 
-#if !defined (LIME_h_)
-	#define LIME_h_
-
-	#include "Lemon.h"
+#include "Lemon.h"
 
 class Lime : public Lemon {
 public:
 	Lime();
-};
+};/* Watson**/
 
-#endif /* !defined (LIME_h_) */
+#endif /* Watson**/
+/* Watson */

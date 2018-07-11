@@ -1,4 +1,3 @@
-
 #include "LittleHand.h"
 #include "Banana.h"
 #include "Lemon.h"
@@ -20,4 +19,5 @@ void LittleHand::sortFruitBox(FruitBox &unsorted,
 		if (!res)
 			unsorted.putFruit(f);
 	}
-}
+}/* Watson**/
+/* Watson */

@@ -1,11 +1,9 @@
+#ifndef LITTLE_HAND_H_
+#define LITTLE_HAND_H_
 
-
-#if !defined (LITTLE_HAND_h_)
-	#define LITTLE_HAND_h_
-
-	#include "Coconut.h"
-	#include "FruitBox.h"
-	#include "Mixer.h"
+#include "Coconut.h"
+#include "FruitBox.h"
+#include "Mixer.h"
 
 class LittleHand {
 public:
@@ -18,4 +16,5 @@ public:
 	static void plugMixer(MixerBase &mixer);
 };
 
-#endif /* !defined (LITTLE_HAND_h_) */
+#endif /* Watson**/
+/* Watson */

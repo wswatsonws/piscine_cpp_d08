@@ -1,7 +1,7 @@
-#if !defined (FRUIT_h_)
-	#define FRUIT_h_
+#ifndef FRUIT_H_
+#define FRUIT_H_
 
-	#include <string>
+#include <string>
 
 class Fruit {
 public:
@@ -19,3 +19,4 @@ protected:
 };
 
 #endif /*Watson */
+/* Watson */

@@ -1,5 +1,5 @@
-#if !defined (LEMON_h_)
-	#define LEMON_h_
+#ifndef LEMON_H_
+#define LEMON_H_
 
 	#include "Fruit.h"
 
@@ -13,3 +13,4 @@ protected:
 };
 
 #endif /* Watson */
+/* Watson */

@@ -1,13 +1,12 @@
+#ifndef BANANA_H_
+#define BANANA_H_
 
-
-#if !defined (BANANA_h_)
-	#define BANANA_h_
-
-	#include "Fruit.h"
+#include "Fruit.h"
 
 class Banana : public Fruit {
 public:
 	Banana();
 };
 
-#endif /* !defined (BANANA_h_) */
+#endif /* Watson**/
+/* Watson */

@@ -1,9 +1,9 @@
-#if !defined (FRUIT_NODE_h_)
-	#define FRUIT_NODE_h_
+#ifndef FRUIT_NODE_H_
+#define FRUIT_NODE_H_
 
-	#include "Fruit.h"
+#include "Fruit.h"
 
-	#define Fruitnode FruitNode
+#define Fruitnode FruitNode
 
 typedef struct FruitNode {
 	const Fruit *fruit;
@@ -11,3 +11,4 @@ typedef struct FruitNode {
 } FruitNode;
 
 #endif /* Watson */
+/* Watson */

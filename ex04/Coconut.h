@@ -1,7 +1,7 @@
-#if !defined (COCONUT_h_)
-	#define COCONUT_h_
+#ifndef COCONUT_H_
+#define COCONUT_H_
 
-	#include "Fruit.h"
+#include "Fruit.h"
 
 class Coconut : public Fruit {
 public:
@@ -9,3 +9,4 @@ public:
 };
 
 #endif /*Watson */
+/* Watson */
