@@ -1,21 +1,6 @@
 #include "Banana.h"
 
-Banana::Banana() : Fruit()
-{
-	_vitamins = 5;
-	_name = "banana";
-}
-
-Banana::~Banana()
+Banana::Banana() :
+	Fruit("banana", 5)
 {
 }
-
-int	Banana::getVitamins() const
-{
-	return _vitamins;
-}
-
-std::string	Banana::getName() const
-{
-	return _name;
-}/*Watson**/
