@@ -1,17 +1,12 @@
-#ifndef COCONUT_H_
-#define COCONUT_H_
 
-#include <iostream>
-#include <string>
-#include "Fruit.h"
+#if !defined (COCONUT_h_)
+	#define COCONUT_h_
 
-class Coconut: public Fruit
-{
- public:
-  Coconut();
-  ~Coconut();
-  int		getVitamins() const;
-  std::string	getName() const;
+	#include "Fruit.h"
+
+class Coconut : public Fruit {
+public:
+	Coconut();
 };
 
-#endif /*Watson**/
+#endif /* !defined (COCONUT_h_) */

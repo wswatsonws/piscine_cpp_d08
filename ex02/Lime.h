@@ -1,17 +1,12 @@
-#ifndef LIME_H_
-#define LIME_H_
 
-#include <iostream>
-#include <string>
-#include "Lemon.h"
+#if !defined (LIME_h_)
+	#define LIME_h_
 
-class Lime : public Lemon
-{
-	public:
-		Lime();
-		~Lime();
-		int getVitamins() const;
-		std::string getName() const;
+	#include "Lemon.h"
+
+class Lime : public Lemon {
+public:
+	Lime();
 };
 
-#endif /*Watson**/
+#endif /* !defined (LIME_h_) */

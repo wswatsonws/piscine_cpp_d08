@@ -1,90 +1,49 @@
+
+
+#include <cstring>
 #include "LittleHand.h"
+#include "Banana.h"
+#include "Lemon.h"
+#include "Lime.h"
 
-LittleHand::LittleHand()
+void LittleHand::sortFruitBox(FruitBox &unsorted,
+	FruitBox &lemons, FruitBox &bananas, FruitBox &limes)
 {
-}
-
-LittleHand::~LittleHand()
-{
-}
-
-void		supList(FruitNode *list, FruitNode *tmp)
-{
-	FruitNode	*temp;
-
-	if (list == tmp)
-	{
-		list = list->next;
-		return;
-	}
-	temp = list;
-	while ((temp != NULL) && (temp->next != NULL) && (temp->next->next != NULL))
-	{
-		if (temp->next == tmp)
-			temp->next = temp->next->next;
-		else
-			temp = temp->next;
-	}
-	if (temp->next == tmp)
-		temp = temp->next;
-}
-
-void	LittleHand::sortFruitBox(FruitBox &unsorted,
-				 FruitBox &lemons,
-				 FruitBox &bananas,
-				 FruitBox &limes)
-{
-	FruitNode	*tmp;
-	Fruit		*t;
-	Fruit		*f;
-	int		i(0);
-	int		nb = unsorted.nbFruits();
-
-	tmp = unsorted.head();
-	if (!tmp)
-		return;
-	while (i < nb && tmp)
-	{
-		t = tmp->fruit;
-		if (dynamic_cast<Banana *>(t))
-		{
-			if (bananas.putFruit((f = unsorted.pickFruit())) == false)
-				unsorted.putFruit(f);
-		}
-		else if (dynamic_cast<Lime *>(t))
-		{
-			if (limes.putFruit((f = unsorted.pickFruit())) == false)
-				unsorted.putFruit(f);
-		}
-		else if (dynamic_cast<Lemon *>(t))
-		{
-			if (lemons.putFruit((f = unsorted.pickFruit())) == false)
-				unsorted.putFruit(f);
-		}
-		tmp = tmp->next;
-		i++;
+	int count = unsorted.nbFruits();
+	for (int i = 0; i < count; i++) {
+		bool res = false;
+		Fruit *f = unsorted.pickFruit();
+		if (dynamic_cast<Lime*>(f) != nullptr)
+			res = limes.putFruit(f);
+		else if (dynamic_cast<Lemon*>(f) != nullptr)
+			res = lemons.putFruit(f);
+		else if (dynamic_cast<Banana*>(f) != nullptr)
+			res = bananas.putFruit(f);
+		if (!res)
+			unsorted.putFruit(f);
 	}
 }
 
-FruitBox * const * LittleHand::organizeCoconut(Coconut const * const * coconuts_packet)
+FruitBox * const *LittleHand::organizeCoconut(Coconut const * const *coconuts)
 {
-	int		size(0);
-	int		i(-1);
-	FruitBox	**pack;
-
-	while (coconuts_packet[++i] != 0)
-		size++;
-	if ((size % 6) == 0)
-		size /= 6;
-	else
-		size /= 6 + 1;
-	pack = new FruitBox*[size + 2];
-	for (int i = 0; (i < size + 2); i++) 
-	{
-		pack[i] = new FruitBox(6);
+	if (!coconuts)
+		return NULL;
+	size_t boxes = 0;
+	FruitBox **res = nullptr;
+	FruitBox **tmp;
+	while (*coconuts) {
+		tmp = new FruitBox*[boxes + 1];
+		memcpy(tmp, res, boxes * sizeof(*tmp));
+		delete[] res;
+		res = tmp;
+		res[boxes] = new FruitBox(6);
+		for (int i = 0; i < 6 && *coconuts; i++)
+			res[boxes]->putFruit(*coconuts++);
+		boxes++;
 	}
-	i = -1;
-	while (coconuts_packet[++i])
-		pack[i / 6]->putFruit(const_cast<Coconut *>(coconuts_packet[i % 6]));
-	return pack;
+	tmp = new FruitBox*[boxes + 1];
+	memcpy(tmp, res, boxes * sizeof(*tmp));
+	delete[] res;
+	tmp[boxes] = nullptr;
+	return (tmp);
 }

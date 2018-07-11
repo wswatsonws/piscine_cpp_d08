@@ -1,15 +1,16 @@
-#ifndef LEMON_H_
-#define LEMON_H_
 
-#include "Fruit.h"
+#if !defined (LEMON_h_)
+	#define LEMON_h_
+
+	#include "Fruit.h"
 
 class Lemon : public Fruit
 {
-	public:
-		Lemon();
-		~Lemon();
-		int		getVitamins() const;
-		std::string	getName() const;
+public:
+	Lemon();
+
+protected:
+	Lemon(std::string name, int vitamins);
 };
 
-#endif /*Watson**/
+#endif /* !defined (LEMON_h_) */
