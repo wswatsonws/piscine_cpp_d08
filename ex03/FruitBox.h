@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 #ifndef FRUIT_BOX_H_
 #define FRUIT_BOX_H_
 
@@ -24,3 +27,4 @@ private:
 
 #endif /* Watson**/
 /* Watson */
+/* My own copyright */

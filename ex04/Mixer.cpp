@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 #include "Mixer.h"
 
 static int mix(FruitBox &fruits)
@@ -21,3 +24,4 @@ void Mixer::plug()
 	this->_plugged = true;
 } /* Watson */
 /* Watson */
+/* My own copyright */

@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 #ifndef FRUITBOX_H_
 #define FRUITBOX_H_
 
@@ -26,3 +29,4 @@ class FruitBox
 
 #endif /*Watson **/
 /* Watson */
+/* My own copyright */

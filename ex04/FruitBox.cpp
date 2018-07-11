@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 #include "FruitBox.h"
 
 FruitBox::FruitBox(unsigned int capacity) :
@@ -55,3 +58,4 @@ FruitNode *FruitBox::head() const
 	return (this->_head);
 }/* Watson */
 /* Watson */
+/* My own copyright */

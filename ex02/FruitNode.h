@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 #ifndef FRUIT_NODE_H_
 #define FRUIT_NODE_H_
 
@@ -12,3 +15,4 @@ typedef struct FruitNode {
 
 #endif /* Watson**/
 /* Watson */
+/* My own copyright */

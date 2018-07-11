@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 #include "Lemon.h"
 
 Lemon::Lemon() :
@@ -10,3 +13,4 @@ Lemon::Lemon(std::string name, int vitamins) :
 {
 }/* Watson**/
 /* Watson */
+/* My own copyright */

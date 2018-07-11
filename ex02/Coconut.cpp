@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 #include "Coconut.h"
 
 Coconut::Coconut() :
@@ -5,3 +8,4 @@ Coconut::Coconut() :
 {
 }/* Watson**/
 /* Watson */
+/* My own copyright */

@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 #include "FruitBox.h"
 
 FruitBox::FruitBox(int size) : _size(size), _nb(0), list(NULL)
@@ -82,3 +85,4 @@ FruitNode	*FruitBox::head() const
 	return list;
 }/*Watson **/
 /* Watson */
+/* My own copyright */

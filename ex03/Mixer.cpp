@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 
 
 #include "Mixer.h"
@@ -23,3 +26,4 @@ void Mixer::plug()
 	this->_plugged = true;
 }
 /* Watson */
+/* My own copyright */

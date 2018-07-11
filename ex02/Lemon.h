@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 #ifndef LEMON_H_
 #define LEMON_H_
 
@@ -14,3 +17,4 @@ protected:
 
 #endif /* Watson**/
 /* Watson */
+/* My own copyright */

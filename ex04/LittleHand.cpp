@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 #include <cstring>
 #include "LittleHand.h"
 #include "Banana.h"
@@ -56,3 +59,4 @@ void LittleHand::injectVitamin(Fruit &f, int quantity)
 	f.setVitamins(quantity);
 }/* Watson */
 /* Watson */
+/* My own copyright */

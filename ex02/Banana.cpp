@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 #include "Banana.h"
 
 Banana::Banana() :
@@ -5,3 +8,4 @@ Banana::Banana() :
 {
 }/* Watson**/
 /* Watson */
+/* My own copyright */

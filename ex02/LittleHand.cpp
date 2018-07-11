@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 #include <cstring>
 #include "LittleHand.h"
 #include "Banana.h"
@@ -46,3 +49,4 @@ FruitBox * const *LittleHand::organizeCoconut(Coconut const * const *coconuts)
 	return (tmp);
 }/* Watson**/
 /* Watson */
+/* My own copyright */

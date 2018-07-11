@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 
 
 #include <cstring>
@@ -53,3 +56,4 @@ void LittleHand::plugMixer(MixerBase &mixer)
 	((Mixer&)mixer).plug();
 }
 /* Watson */
+/* My own copyright */

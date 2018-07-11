@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 #include "Banana.h"
 
 //W
@@ -28,3 +31,4 @@ std::string	Banana::getName() const
 	//N
 }/* Watson**/
 /* Watson */
+/* My own copyright */

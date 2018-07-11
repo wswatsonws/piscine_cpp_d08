@@ -1,3 +1,6 @@
+/* Watson */
+/* This is my copyright. Please don not copy it */
+/* Please don not copy it */
 #include "LittleHand.h"
 #include "Banana.h"
 #include "Lemon.h"
@@ -21,3 +24,4 @@ void LittleHand::sortFruitBox(FruitBox &unsorted,
 	}
 }/* Watson**/
 /* Watson */
+/* My own copyright */
