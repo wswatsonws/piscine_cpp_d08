@@ -1,12 +1,15 @@
-#ifndef FRUINODE_H_
-#define FRUINODE_H_
 
-#include "Fruit.h"
 
-typedef struct FruitNode
-{
-	Fruit *fruit;
-	FruitNode *next;
-}	FruitNode;
+#if !defined (FRUIT_NODE_h_)
+	#define FRUIT_NODE_h_
 
-#endif /*Watson**/
+	#include "Fruit.h"
+
+	#define Fruitnode FruitNode
+
+typedef struct FruitNode {
+	const Fruit *fruit;
+	struct FruitNode *next;
+} FruitNode;
+
+#endif /* !defined (FRUIT_NODE_h_) */

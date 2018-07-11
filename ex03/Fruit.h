@@ -1,20 +1,21 @@
-#ifndef FRUIT_H_
-#define FRUIT_H_
 
-#include <iostream>
-#include <string>
+#if !defined (FRUIT_h_)
+	#define FRUIT_h_
 
-class Fruit
-{
-	protected:
-		int		_vitamins;
-		std::string	_name;
+	#include <string>
 
-	public:
-		Fruit();
-		virtual ~Fruit();
-		virtual int		getVitamins() const;
-		virtual std::string	getName() const = 0;
+class Fruit {
+public:
+	virtual ~Fruit() {}
+
+	virtual std::string getName() const;
+	int getVitamins() const;
+
+protected:
+	Fruit(std::string name, int vitamins);
+
+	const std::string _name;
+	int _vitamins;
 };
 
-#endif /*Watson**/
+#endif /* !defined (FRUIT_h_) */

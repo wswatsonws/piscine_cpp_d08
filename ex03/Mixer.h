@@ -1,15 +1,15 @@
-#ifndef MIXER_H_
-#define MIXER_H_
 
-#include "MixerBase.h"
 
-class Mixer : public MixerBase
-{
-	public:
+#if !defined (MIXER_h_)
+	#define MIXER_h_
+
+	#include "MixerBase.h"
+
+class Mixer : public MixerBase {
+public:
 	Mixer();
-	~Mixer();
+
+	void plug();
 };
 
-
-
-#endif /*Watson**/
+#endif /* !defined (MIXER_h_) */

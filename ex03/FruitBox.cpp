@@ -1,71 +1,57 @@
-#include "FruitBox.h"
-#include "Fruit.h"
 
-FruitBox::FruitBox(int size) : _size(size), _nb(0), list(NULL)
+#include "FruitBox.h"
+
+FruitBox::FruitBox(unsigned int capacity) :
+	_count(0), _capacity(capacity), _head(nullptr)
 {
 }
 
 FruitBox::~FruitBox()
 {
+	FruitNode *node = this->_head;
+	while (node) {
+		FruitNode *next = node->next;
+		delete node;
+		node = next;
+	}
 }
 
 int FruitBox::nbFruits() const
 {
-	return _nb;
+	return (this->_count);
 }
 
-bool FruitBox::putFruit(Fruit *f)
+bool FruitBox::putFruit(const Fruit *f)
 {
-	FruitNode	*tmp;
-	FruitNode	*elem;
-	int		nb(1);
-
-	if (nb > _size)
+	if (this->_count == this->_capacity)
 		return (false);
-	if (list == NULL)
-	{
-		list = new FruitNode;
-		list->fruit = f;
-		list->next = NULL;
-		_nb++;
-		return (true);
-	}
-	tmp = list;
-	while (tmp->next != NULL)
-	{
-		if ((tmp->fruit == f) || (nb >= _size))
+	FruitNode **node_ptr = &this->_head;
+	while (*node_ptr) {
+		if (*node_ptr && (*node_ptr)->fruit == f)
 			return (false);
-		nb++;
-		tmp = tmp->next;
+		node_ptr = &(*node_ptr)->next;
 	}
-	if (nb >= _size)
-		return (false);
-	if (tmp->fruit == f)
-		return (false);
-	elem = new FruitNode;
-	elem->fruit = f;
-	elem->next = NULL;
-	tmp->next = elem;
-	_nb++;
+	FruitNode *node = new FruitNode;
+	node->fruit = f;
+	node->next = nullptr;
+	*node_ptr = node;
+	this->_count++;
 	return (true);
 }
 
-Fruit		*FruitBox::pickFruit()
+Fruit *FruitBox::pickFruit()
 {
-	FruitNode *tmp;
-	Fruit *f;
-
-	if (list == NULL)
-		return (NULL);
-	f = list->fruit;
-	tmp = list;
-	list = list->next;
-	delete tmp;
-	_nb--;
-	return (f);
+	FruitNode *node = this->_head;
+	if (!node)
+		return (nullptr);
+	this->_head = node->next;
+	const Fruit *res = node->fruit;
+	delete node;
+	this->_count--;
+	return ((Fruit*)res);
 }
 
-FruitNode	*FruitBox::head() const
+FruitNode *FruitBox::head() const
 {
-	return list;
-}/*Watson**/
+	return (this->_head);
+}
